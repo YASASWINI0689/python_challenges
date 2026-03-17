@@ -54,4 +54,41 @@ Category: Balanced Playlist
 Recommendation: Good listening session
 
 
+day -7:
+Smart Campus Energy Analyzer
+Problem Statement:
+
+This program takes a list of energy readings (in units) from different campus buildings and analyzes their usage. It classifies readings into efficient, moderate, high consumption, or invalid categories. Based on the analysis, it determines whether the campus energy usage is efficient, balanced, or wasteful and provides a final result.
+
+Personalization Applied:
+
+Applied Rule: I prioritized checking overconsumption first (if high readings are more than 3), followed by balanced usage, and then energy waste detection.
+
+This means even if total consumption is high, the program may still classify it as balanced if efficient and moderate readings are nearly equal.
+
+Logic Used:
+
+I used list input to store all energy readings.
+Then I used a loop and conditional statements to classify each reading into categories and stored them in a dictionary.
+I used list comprehension to filter valid readings (non-negative values).
+After that, I calculated total consumption using sum() and number of buildings using len(), and stored them in a tuple.
+Finally, I applied conditions in a specific order to determine the efficiency result.
+
+How to Run:
+
+Enter energy readings separated by space
+
+Program analyzes the readings
+
+It displays categorized data, total consumption, number of buildings, and final result
+
+Example Input and Output:
+
+Input:
+Enter readings: 10 20 60 200 30
+
+Output:
+Total Consumption: 320
+Buildings: 5
+Category: Moderate Usage
 
